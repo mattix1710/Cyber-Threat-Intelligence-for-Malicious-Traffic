@@ -1,5 +1,5 @@
-import time
 from datetime import datetime
+import requests
 
 class LogColors:
     HEADER = '\033[95m'
@@ -28,3 +28,9 @@ def make_error_log(message: str = ""):
     message_string = f"{LogColors.FAIL}{LogColors.BOLD}ERROR: ({datetime.now()}){LogColors.ENDC} {message}"
     print(message_string)
     return f"ERROR: {message}"
+
+def processing_update(log: str):
+    try:
+        requests.post("REDACTED", data=log)
+    except:
+        print("ERROR: No connection to external host!")
