@@ -14,7 +14,6 @@ import polars as pl
 import os
 import re
 import io
-import requests
 from prerequisites import *
 
 PATH_TO_PROCESS = Path(Path.cwd(), "01_attacks_processing")
