@@ -1,0 +1,47 @@
+Float64 flow_duration
+Float64 Header_Length
+Float64 Protocol Type
+Float64 Duration
+Float64 Rate
+Float64 Srate
+Float64 Drate
+Float64 fin_flag_number
+Float64 syn_flag_number
+Float64 rst_flag_number
+Float64 psh_flag_number
+Float64 ack_flag_number
+Float64 ece_flag_number
+Float64 cwr_flag_number
+Float64 ack_count
+Float64 syn_count
+Float64 fin_count
+Float64 urg_count
+Float64 rst_count
+Float64 HTTP
+Float64 HTTPS
+Float64 DNS
+Float64 Telnet
+Float64 SMTP
+Float64 SSH
+Float64 IRC
+Float64 TCP
+Float64 UDP
+Float64 DHCP
+Float64 ARP
+Float64 ICMP
+Float64 IPv
+Float64 LLC
+Float64 Tot sum
+Float64 Min
+Float64 Max
+Float64 AVG
+Float64 Std
+Float64 Tot size
+Float64 IAT
+Float64 Number
+Float64 Magnitue
+Float64 Radius
+Float64 Covariance
+Float64 Variance
+Float64 Weight
+String label
