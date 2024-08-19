@@ -87,7 +87,9 @@ for att_name in attack_names:
     print("INFO: fitting! ({})".format(att_name))
     stopwatch = time.time()
     forest_classifier.fit(X_train, y_train)
-    print("INFO: fitting ended in: {}s".format(round(time.time()-stopwatch, 2)))
+    log = "INFO: fitting ended in: {}s".format(round(time.time()-stopwatch, 2))
+    print(log)
+    attack_update(log)
     
     with open(Path(ATTACK_DUMPS_PATH, "dump_{}.dmp".format(att_name)), "wb") as file:
         pickle.dump(forest_classifier, file)
