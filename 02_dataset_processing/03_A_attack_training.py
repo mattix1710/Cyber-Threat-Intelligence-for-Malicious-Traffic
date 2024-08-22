@@ -60,17 +60,8 @@ for att_name in attack_names:
     except pl.exceptions.ColumnNotFoundError:
         print("ERROR: chosen columns were not found! No changes to the dataframe has been made!")  
         
-    # extracting benign traffic as 1 and the rest of network traffic flows as 0
-    # of TRAIN part
-    attack_or_not = []
-    for attrib in att_train.get_column("label"):
-        if attrib == "BenignTraffic":
-            attack_or_not.append(1)
-        else:
-            attack_or_not.append(0)
-    
+    # extracting labels for training    
     df_train = att_train.clone()
-    df_train = df_train.with_columns((pl.lit(pl.Series(attack_or_not)).alias('label')))
     y_train = df_train.select('label').to_series().to_list()
     df_train = df_train.drop('label')
     X_train = df_train.to_numpy()
