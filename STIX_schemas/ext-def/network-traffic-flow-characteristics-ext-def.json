@@ -1,0 +1,1214 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/mattix1710/Cyber-Threat-Intelligence-for-Malicious-Traffic/main/STIX_schemas/ext-def/network-traffic-flow-characteristics-ext-def.json",
+    "title": "network-traffic-flow-characteristics-ext-def",
+    "description": "This schema extends the Network Traffic SCO with most important features of the flow. These features help recognizing and defining different IoT attack types.",
+    "type": "object",
+    "properties": {
+        "src_ip": {
+            "type": "string",
+            "description": "Source IP"
+        },
+        "dst_ip": {
+            "type": "string",
+            "description": "Destination IP"
+        },
+        "src_port": {
+            "type": "float",
+            "description": "Source Port"
+        },
+        "dst_port": {
+            "type": "float",
+            "description": "Destination Port"
+        },
+        "duration": {
+            "type": "float",
+            "description": "Duration of the Flow"
+        },
+        "packets_count": {
+            "type": "float",
+            "description": "Total Number of Packets"
+        },
+        "fwd_packets_count": {
+            "type": "float",
+            "description": "Number of Forward Packets"
+        },
+        "bwd_packets_count": {
+            "type": "float",
+            "description": "Number of Backward Packets"
+        },
+        "total_payload_bytes": {
+            "type": "float",
+            "description": "Total Payload Bytes"
+        },
+        "fwd_total_payload_bytes": {
+            "type": "float",
+            "description": "Forward Total Payload Bytes"
+        },
+        "bwd_total_payload_bytes": {
+            "type": "float",
+            "description": "Backward Total Payload Bytes"
+        },
+        "payload_bytes_max": {
+            "type": "float",
+            "description": "Maximum Payload Bytes"
+        },
+        "payload_bytes_min": {
+            "type": "float",
+            "description": "Minimum Payload Bytes"
+        },
+        "payload_bytes_mean": {
+            "type": "float",
+            "description": "Mean Payload Bytes"
+        },
+        "payload_bytes_std": {
+            "type": "float",
+            "description": "Standard Deviation of Payload Bytes"
+        },
+        "payload_bytes_variance": {
+            "type": "float",
+            "description": "Variance of Payload Bytes"
+        },
+        "payload_bytes_median": {
+            "type": "float",
+            "description": "Median of Payload Bytes"
+        },
+        "payload_bytes_skewness": {
+            "type": "float",
+            "description": "Skewness of Payload Bytes"
+        },
+        "payload_bytes_cov": {
+            "type": "float",
+            "description": "Coefficient of Variation of Payload Bytes"
+        },
+        "payload_bytes_mode": {
+            "type": "float",
+            "description": "Mode of Payload Bytes"
+        },
+        "fwd_payload_bytes_max": {
+            "type": "float",
+            "description": "Forward Maximum Payload Bytes"
+        },
+        "fwd_payload_bytes_min": {
+            "type": "float",
+            "description": "Forward Minimum Payload Bytes"
+        },
+        "fwd_payload_bytes_mean": {
+            "type": "float",
+            "description": "Forward Mean Payload Bytes"
+        },
+        "fwd_payload_bytes_std": {
+            "type": "float",
+            "description": "Forward Standard Deviation of Payload Bytes"
+        },
+        "fwd_payload_bytes_variance": {
+            "type": "float",
+            "description": "Forward Variance of Payload Bytes"
+        },
+        "fwd_payload_bytes_median": {
+            "type": "float",
+            "description": "Forward Median of Payload Bytes"
+        },
+        "fwd_payload_bytes_skewness": {
+            "type": "float",
+            "description": "Forward Skewness of Payload Bytes"
+        },
+        "fwd_payload_bytes_cov": {
+            "type": "float",
+            "description": "Forward Coefficient of Variation of Payload Bytes"
+        },
+        "fwd_payload_bytes_mode": {
+            "type": "float",
+            "description": "Forward Mode of Payload Bytes"
+        },
+        "bwd_payload_bytes_max": {
+            "type": "float",
+            "description": "Backward Maximum Payload Bytes"
+        },
+        "bwd_payload_bytes_min": {
+            "type": "float",
+            "description": "Backward Minimum Payload Bytes"
+        },
+        "bwd_payload_bytes_mean": {
+            "type": "float",
+            "description": "Backward Mean Payload Bytes"
+        },
+        "bwd_payload_bytes_std": {
+            "type": "float",
+            "description": "Backward Standard Deviation of Payload Bytes"
+        },
+        "bwd_payload_bytes_variance": {
+            "type": "float",
+            "description": "Backward Variance of Payload Bytes"
+        },
+        "bwd_payload_bytes_median": {
+            "type": "float",
+            "description": "Backward Median of Payload Bytes"
+        },
+        "bwd_payload_bytes_skewness": {
+            "type": "float",
+            "description": "Backward Skewness of Payload Bytes"
+        },
+        "bwd_payload_bytes_cov": {
+            "type": "float",
+            "description": "Backward Coefficient of Variation of Payload Bytes"
+        },
+        "bwd_payload_bytes_mode": {
+            "type": "float",
+            "description": "Backward Mode of Payload Bytes"
+        },
+        "total_header_bytes": {
+            "type": "float",
+            "description": "Total Header Bytes"
+        },
+        "max_header_bytes": {
+            "type": "float",
+            "description": "Maximum Header Bytes"
+        },
+        "min_header_bytes": {
+            "type": "float",
+            "description": "Minimum Header Bytes"
+        },
+        "mean_header_bytes": {
+            "type": "float",
+            "description": "Mean Header Bytes"
+        },
+        "std_header_bytes": {
+            "type": "float",
+            "description": "Standard Deviation of Header Bytes"
+        },
+        "median_header_bytes": {
+            "type": "float",
+            "description": "Median of Header Bytes"
+        },
+        "skewness_header_bytes": {
+            "type": "float",
+            "description": "Skewness of Header Bytes"
+        },
+        "cov_header_bytes": {
+            "type": "float",
+            "description": "Coefficient of Variation of Header Bytes"
+        },
+        "mode_header_bytes": {
+            "type": "float",
+            "description": "Mode of Header Bytes"
+        },
+        "variance_header_bytes": {
+            "type": "float",
+            "description": "Variance of Header Bytes"
+        },
+        "fwd_total_header_bytes": {
+            "type": "float",
+            "description": "Forward Total Header Bytes"
+        },
+        "fwd_max_header_bytes": {
+            "type": "float",
+            "description": "Forward Maximum Header Bytes"
+        },
+        "fwd_min_header_bytes": {
+            "type": "float",
+            "description": "Forward Minimum Header Bytes"
+        },
+        "fwd_mean_header_bytes": {
+            "type": "float",
+            "description": "Forward Mean Header Bytes"
+        },
+        "fwd_std_header_bytes": {
+            "type": "float",
+            "description": "Forward Standard Deviation of Header Bytes"
+        },
+        "fwd_median_header_bytes": {
+            "type": "float",
+            "description": "Forward Median of Header Bytes"
+        },
+        "fwd_skewness_header_bytes": {
+            "type": "float",
+            "description": "Forward Skewness of Header Bytes"
+        },
+        "fwd_cov_header_bytes": {
+            "type": "float",
+            "description": "Forward Coefficient of Variation of Header Bytes"
+        },
+        "fwd_mode_header_bytes": {
+            "type": "float",
+            "description": "Forward Mode of Header Bytes"
+        },
+        "fwd_variance_header_bytes": {
+            "type": "float",
+            "description": "Forward Variance of Header Bytes"
+        },
+        "bwd_total_header_bytes": {
+            "type": "float",
+            "description": "Backward Total Header Bytes"
+        },
+        "bwd_max_header_bytes": {
+            "type": "float",
+            "description": "Backward Maximum Header Bytes"
+        },
+        "bwd_min_header_bytes": {
+            "type": "float",
+            "description": "Backward Minimum Header Bytes"
+        },
+        "bwd_mean_header_bytes": {
+            "type": "float",
+            "description": "Backward Mean Header Bytes"
+        },
+        "bwd_std_header_bytes": {
+            "type": "float",
+            "description": "Backward Standard Deviation of Header Bytes"
+        },
+        "bwd_median_header_bytes": {
+            "type": "float",
+            "description": "Backward Median of Header Bytes"
+        },
+        "bwd_skewness_header_bytes": {
+            "type": "float",
+            "description": "Backward Skewness of Header Bytes"
+        },
+        "bwd_cov_header_bytes": {
+            "type": "float",
+            "description": "Backward Coefficient of Variation of Header Bytes"
+        },
+        "bwd_mode_header_bytes": {
+            "type": "float",
+            "description": "Backward Mode of Header Bytes"
+        },
+        "bwd_variance_header_bytes": {
+            "type": "float",
+            "description": "Backward Variance of Header Bytes"
+        },
+        "fwd_avg_segment_size": {
+            "type": "float",
+            "description": "Forward Average Segment Size"
+        },
+        "bwd_avg_segment_size": {
+            "type": "float",
+            "description": "Backward Average Segment Size"
+        },
+        "avg_segment_size": {
+            "type": "float",
+            "description": "Average Segment Size"
+        },
+        "fwd_init_win_bytes": {
+            "type": "float",
+            "description": "Forward Initial Window Bytes"
+        },
+        "bwd_init_win_bytes": {
+            "type": "float",
+            "description": "Backward Initial Window Bytes"
+        },
+        "bytes_rate": {
+            "type": "float",
+            "description": "Bytes Rate"
+        },
+        "fwd_bytes_rate": {
+            "type": "float",
+            "description": "Forward Bytes Rate"
+        },
+        "bwd_bytes_rate": {
+            "type": "float",
+            "description": "Backward Bytes Rate"
+        },
+        "packets_rate": {
+            "type": "float",
+            "description": "Packets Rate"
+        },
+        "bwd_packets_rate": {
+            "type": "float",
+            "description": "Backward Packets Rate"
+        },
+        "fwd_packets_rate": {
+            "type": "float",
+            "description": "Forward Packets Rate"
+        },
+        "down_up_rate": {
+            "type": "float",
+            "description": "Down-Up Ratio"
+        },
+        "avg_fwd_bytes_per_bulk": {
+            "type": "float",
+            "description": "Average Forward Bytes per Bulk"
+        },
+        "avg_fwd_packets_per_bulk": {
+            "type": "float",
+            "description": "Average Forward Packets per Bulk"
+        },
+        "avg_fwd_bulk_rate": {
+            "type": "float",
+            "description": "Average Forward Bulk Rate"
+        },
+        "avg_bwd_bytes_per_bulk": {
+            "type": "float",
+            "description": "Average Backward Bytes per Bulk"
+        },
+        "avg_bwd_packets_bulk_rate": {
+            "type": "float",
+            "description": "Average Backward Packets per Bulk"
+        },
+        "avg_bwd_bulk_rate": {
+            "type": "float",
+            "description": "Average Backward Bulk Rate"
+        },
+        "fwd_bulk_state_count": {
+            "type": "float",
+            "description": "Forward Bulk State Count"
+        },
+        "fwd_bulk_total_size": {
+            "type": "float",
+            "description": "Forward Bulk Total Size"
+        },
+        "fwd_bulk_per_packet": {
+            "type": "float",
+            "description": "Forward Bulk per Packet"
+        },
+        "fwd_bulk_duration": {
+            "type": "float",
+            "description": "Forward Bulk Duration"
+        },
+        "bwd_bulk_state_count": {
+            "type": "float",
+            "description": "Backward Bulk State Count"
+        },
+        "bwd_bulk_total_size": {
+            "type": "float",
+            "description": "Backward Bulk Total Size"
+        },
+        "bwd_bulk_per_packet": {
+            "type": "float",
+            "description": "Backward Bulk per Packet"
+        },
+        "bwd_bulk_duration": {
+            "type": "float",
+            "description": "Backward Bulk Duration"
+        },
+        "fin_flag_counts": {
+            "type": "float",
+            "description": "FIN Flag Counts"
+        },
+        "psh_flag_counts": {
+            "type": "float",
+            "description": "PSH Flag Counts"
+        },
+        "urg_flag_counts": {
+            "type": "float",
+            "description": "URG Flag Counts"
+        },
+        "ece_flag_counts": {
+            "type": "float",
+            "description": "ECE Flag Counts"
+        },
+        "syn_flag_counts": {
+            "type": "float",
+            "description": "SYN Flag Counts"
+        },
+        "ack_flag_counts": {
+            "type": "float",
+            "description": "ACK Flag Counts"
+        },
+        "cwr_flag_counts": {
+            "type": "float",
+            "description": "CWR Flag Counts"
+        },
+        "rst_flag_counts": {
+            "type": "float",
+            "description": "RST Flag Counts"
+        },
+        "fwd_fin_flag_counts": {
+            "type": "float",
+            "description": "Forward FIN Flag Counts"
+        },
+        "fwd_psh_flag_counts": {
+            "type": "float",
+            "description": "Forward PSH Flag Counts"
+        },
+        "fwd_urg_flag_counts": {
+            "type": "float",
+            "description": "Forward URG Flag Counts"
+        },
+        "fwd_ece_flag_counts": {
+            "type": "float",
+            "description": "Forward ECE Flag Counts"
+        },
+        "fwd_syn_flag_counts": {
+            "type": "float",
+            "description": "Forward SYN Flag Counts"
+        },
+        "fwd_ack_flag_counts": {
+            "type": "float",
+            "description": "Forward ACK Flag Counts"
+        },
+        "fwd_cwr_flag_counts": {
+            "type": "float",
+            "description": "Forward CWR Flag Counts"
+        },
+        "fwd_rst_flag_counts": {
+            "type": "float",
+            "description": "Forward RST Flag Counts"
+        },
+        "bwd_fin_flag_counts": {
+            "type": "float",
+            "description": "Backward FIN Flag Counts"
+        },
+        "bwd_psh_flag_counts": {
+            "type": "float",
+            "description": "Backward PSH Flag Counts"
+        },
+        "bwd_urg_flag_counts": {
+            "type": "float",
+            "description": "Backward URG Flag Counts"
+        },
+        "bwd_ece_flag_counts": {
+            "type": "float",
+            "description": "Backward ECE Flag Counts"
+        },
+        "bwd_syn_flag_counts": {
+            "type": "float",
+            "description": "Backward SYN Flag Counts"
+        },
+        "bwd_ack_flag_counts": {
+            "type": "float",
+            "description": "Backward ACK Flag Counts"
+        },
+        "bwd_cwr_flag_counts": {
+            "type": "float",
+            "description": "Backward CWR Flag Counts"
+        },
+        "bwd_rst_flag_counts": {
+            "type": "float",
+            "description": "Backward RST Flag Counts"
+        },
+        "fin_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of FIN Flag in Total Packets"
+        },
+        "psh_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of PSH Flag in Total Packets"
+        },
+        "urg_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of URG Flag in Total Packets"
+        },
+        "ece_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of ECE Flag in Total Packets"
+        },
+        "syn_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of SYN Flag in Total Packets"
+        },
+        "ack_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of ACK Flag in Total Packets"
+        },
+        "cwr_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of CWR Flag in Total Packets"
+        },
+        "rst_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of RST Flag in Total Packets"
+        },
+        "fwd_fin_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward FIN Flag in Total Packets"
+        },
+        "fwd_psh_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward PSH Flag in Total Packets"
+        },
+        "fwd_urg_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward URG Flag in Total Packets"
+        },
+        "fwd_ece_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward ECE Flag in Total Packets"
+        },
+        "fwd_syn_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward SYN Flag in Total Packets"
+        },
+        "fwd_ack_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward ACK Flag in Total Packets"
+        },
+        "fwd_cwr_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward CWR Flag in Total Packets"
+        },
+        "fwd_rst_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Forward RST Flag in Total Packets"
+        },
+        "bwd_fin_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward FIN Flag in Total Packets"
+        },
+        "bwd_psh_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward PSH Flag in Total Packets"
+        },
+        "bwd_urg_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward URG Flag in Total Packets"
+        },
+        "bwd_ece_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward ECE Flag in Total Packets"
+        },
+        "bwd_syn_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward SYN Flag in Total Packets"
+        },
+        "bwd_ack_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward ACK Flag in Total Packets"
+        },
+        "bwd_cwr_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward CWR Flag in Total Packets"
+        },
+        "bwd_rst_flag_percentage_in_total": {
+            "type": "float",
+            "description": "Percentage of Backward RST Flag in Total Packets"
+        },
+        "fwd_fin_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward FIN Flag in Forward Packets"
+        },
+        "fwd_psh_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward PSH Flag in Forward Packets"
+        },
+        "fwd_urg_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward URG Flag in Forward Packets"
+        },
+        "fwd_ece_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward ECE Flag in Forward Packets"
+        },
+        "fwd_syn_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward SYN Flag in Forward Packets"
+        },
+        "fwd_ack_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward ACK Flag in Forward Packets"
+        },
+        "fwd_cwr_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward CWR Flag in Forward"
+        },
+        "fwd_rst_flag_percentage_in_fwd_packets": {
+            "type": "float",
+            "description": "Percentage of Forward RST Flag in Forward Packets"
+        },
+        "bwd_fin_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward FIN Flag in Backward Packets"
+        },
+        "bwd_psh_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward PSH Flag in Backward Packets"
+        },
+        "bwd_urg_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward URG Flag in Backward Packets"
+        },
+        "bwd_ece_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward ECE Flag in Backward Packets"
+        },
+        "bwd_syn_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward SYN Flag in Backward Packets"
+        },
+        "bwd_ack_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward ACK Flag in Backward Packets"
+        },
+        "bwd_cwr_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward CWR Flag in Backward Packets"
+        },
+        "bwd_rst_flag_percentage_in_bwd_packets": {
+            "type": "float",
+            "description": "Percentage of Backward RST Flag in Backward Packets"
+        },
+        "packets_IAT_mean": {
+            "type": "float",
+            "description": "Mean Inter-Arrival Time of Packets"
+        },
+        "packet_IAT_std": {
+            "type": "float",
+            "description": "Standard Deviation of Packet Inter-Arrival Time"
+        },
+        "packet_IAT_max": {
+            "type": "float",
+            "description": "Maximum Packet Inter-Arrival Time"
+        },
+        "packet_IAT_min": {
+            "type": "float",
+            "description": "Minimum Packet Inter-Arrival Time"
+        },
+        "packet_IAT_total": {
+            "type": "float",
+            "description": "Total Packet Inter-Arrival Time"
+        },
+        "packets_IAT_median": {
+            "type": "float",
+            "description": "Median Inter-Arrival Time of Packets"
+        },
+        "packets_IAT_skewness": {
+            "type": "float",
+            "description": "Skewness of Packet Inter-Arrival Time"
+        },
+        "packets_IAT_cov": {
+            "type": "float",
+            "description": "Coefficient of Variation of Packet Inter-Arrival Time"
+        },
+        "packets_IAT_mode": {
+            "type": "float",
+            "description": "Mode of Packet Inter-Arrival Time"
+        },
+        "packets_IAT_variance": {
+            "type": "float",
+            "description": "Variance of Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_mean": {
+            "type": "float",
+            "description": "Mean Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_std": {
+            "type": "float",
+            "description": "Standard Deviation of Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_max": {
+            "type": "float",
+            "description": "Maximum Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_min": {
+            "type": "float",
+            "description": "Minimum Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_total": {
+            "type": "float",
+            "description": "Total Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_median": {
+            "type": "float",
+            "description": "Median Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_skewness": {
+            "type": "float",
+            "description": "Skewness of Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_cov": {
+            "type": "float",
+            "description": "Coefficient of Variation of Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_mode": {
+            "type": "float",
+            "description": "Mode of Forward Packet Inter-Arrival Time"
+        },
+        "fwd_packets_IAT_variance": {
+            "type": "float",
+            "description": "Variance of Forward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_mean": {
+            "type": "float",
+            "description": "Mean Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_std": {
+            "type": "float",
+            "description": "Standard Deviation of Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_max": {
+            "type": "float",
+            "description": "Maximum Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_min": {
+            "type": "float",
+            "description": "Minimum Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_total": {
+            "type": "float",
+            "description": "Total Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_median": {
+            "type": "float",
+            "description": "Median Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_skewness": {
+            "type": "float",
+            "description": "Skewness of Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_cov": {
+            "type": "float",
+            "description": "Coefficient of Variation of Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_mode": {
+            "type": "float",
+            "description": "Mode of Backward Packet Inter-Arrival Time"
+        },
+        "bwd_packets_IAT_variance": {
+            "type": "float",
+            "description": "Variance of Backward Packet Inter-Arrival Time"
+        },
+        "subflow_fwd_packets": {
+            "type": "float",
+            "description": "Subflow Forward Packets"
+        },
+        "subflow_bwd_packets": {
+            "type": "float",
+            "description": "Subflow Backward Packets"
+        },
+        "subflow_fwd_bytes": {
+            "type": "float",
+            "description": "Subflow Forward Bytes"
+        },
+        "subflow_bwd_bytes": {
+            "type": "float",
+            "description": "Subflow Backward Bytes"
+        },
+        "delta_start": {
+            "type": "float",
+            "description": "Delta Start Time"
+        },
+        "handshake_duration": {
+            "type": "float",
+            "description": "Duration of Handshake"
+        },
+        "handshake_state": {
+            "type": "float",
+            "description": "State of Handshake"
+        },
+        "min_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Minimum Backward Packet Delta Time"
+        },
+        "max_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Maximum Backward Packet Delta Time"
+        },
+        "mean_packets_delta_time": {
+            "type": "float",
+            "description": "Mean Packet Delta Time"
+        },
+        "mode_packets_delta_time": {
+            "type": "float",
+            "description": "Mode of Packet Delta Time"
+        },
+        "variance_packets_delta_time": {
+            "type": "float",
+            "description": "Variance of Packet Delta Time"
+        },
+        "std_packets_delta_time": {
+            "type": "float",
+            "description": "Standard Deviation of Packet Delta Time"
+        },
+        "median_packets_delta_time": {
+            "type": "float",
+            "description": "Median of Packet Delta Time"
+        },
+        "skewness_packets_delta_time": {
+            "type": "float",
+            "description": "Skewness of Packet Delta Time"
+        },
+        "cov_packets_delta_time": {
+            "type": "float",
+            "description": "Coefficient of Variation of Packet Delta Time"
+        },
+        "mean_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Mean Backward Packet Delta Time"
+        },
+        "mode_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Mode of Backward Packet Delta Time"
+        },
+        "variance_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Variance of Backward Packet Delta Time"
+        },
+        "std_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Standard Deviation of Backward Packet Delta Time"
+        },
+        "median_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Median of Backward Packet Delta Time"
+        },
+        "skewness_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Skewness of Backward Packet Delta Time"
+        },
+        "cov_bwd_packets_delta_time": {
+            "type": "float",
+            "description": "Coefficient of Variation of Backward Packet Delta Time"
+        },
+        "min_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Minimum Forward Packet Delta Time"
+        },
+        "max_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Maximum Forward Packet Delta Time"
+        },
+        "mean_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Mean Forward Packet Delta Time"
+        },
+        "mode_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Mode of Forward Packet Delta Time"
+        },
+        "variance_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Variance of Forward Packet Delta Time"
+        },
+        "std_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Standard Deviation of Forward Packet Delta Time"
+        },
+        "median_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Median of Forward Packet Delta Time"
+        },
+        "skewness_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Skewness of Forward Packet Delta Time"
+        },
+        "cov_fwd_packets_delta_time": {
+            "type": "float",
+            "description": "Coefficient of Variation of Forward Packet Delta Time"
+        },
+        "min_packets_delta_len": {
+            "type": "float",
+            "description": "Minimum Packet Delta Length"
+        },
+        "max_packets_delta_len": {
+            "type": "float",
+            "description": "Maximum Packet Delta Length"
+        },
+        "mean_packets_delta_len": {
+            "type": "float",
+            "description": "Mean Packet Delta Length"
+        },
+        "mode_packets_delta_len": {
+            "type": "float",
+            "description": "Mode of Packet Delta Length"
+        },
+        "variance_packets_delta_len": {
+            "type": "float",
+            "description": "Variance of Packet Delta Length"
+        },
+        "std_packets_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Packet Delta Length"
+        },
+        "median_packets_delta_len": {
+            "type": "float",
+            "description": "Median of Packet Delta Length"
+        },
+        "skewness_packets_delta_len": {
+            "type": "float",
+            "description": "Skewness of Packet Delta Length"
+        },
+        "cov_packets_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Packet Delta Length"
+        },
+        "min_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Minimum Backward Packet Delta Length"
+        },
+        "max_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Maximum Backward Packet Delta Length"
+        },
+        "mean_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Mean Backward Packet Delta Length"
+        },
+        "mode_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Mode of Backward Packet Delta Length"
+        },
+        "variance_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Variance of Backward Packet Delta Length"
+        },
+        "std_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Backward Packet Delta Length"
+        },
+        "median_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Median of Backward Packet Delta Length"
+        },
+        "skewness_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Skewness of Backward Packet Delta Length"
+        },
+        "cov_bwd_packets_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Backward Packet Delta Length"
+        },
+        "min_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Minimum Forward Packet Delta Length"
+        },
+        "max_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Maximum Forward Packet Delta Length"
+        },
+        "mean_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Mean Forward Packet Delta Length"
+        },
+        "mode_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Mode of Forward Packet Delta Length"
+        },
+        "variance_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Variance of Forward Packet Delta Length"
+        },
+        "std_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Forward Packet Delta Length"
+        },
+        "median_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Median of Forward Packet Delta Length"
+        },
+        "skewness_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Skewness of Forward Packet Delta Length"
+        },
+        "cov_fwd_packets_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Forward Packet Delta Length"
+        },
+        "min_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Minimum Header Bytes Delta Length"
+        },
+        "max_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Maximum Header Bytes Delta Length"
+        },
+        "mean_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Mean Header Bytes Delta Length"
+        },
+        "mode_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Mode of Header Bytes Delta Length"
+        },
+        "variance_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Variance of Header Bytes Delta Length"
+        },
+        "std_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Header Bytes Delta Length"
+        },
+        "median_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Median of Header Bytes Delta Length"
+        },
+        "skewness_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Skewness of Header Bytes Delta Length"
+        },
+        "cov_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Header Bytes Delta Length"
+        },
+        "min_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Minimum Backward Header Bytes Delta Length"
+        },
+        "max_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Maximum Backward Header Bytes Delta Length"
+        },
+        "mean_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Mean Backward Header Bytes Delta Length"
+        },
+        "mode_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Mode of Backward Header Bytes Delta Length"
+        },
+        "variance_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Variance of Backward Header Bytes Delta Length"
+        },
+        "std_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Backward Header Bytes Delta Length"
+        },
+        "median_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Median of Backward Header Bytes Delta Length"
+        },
+        "skewness_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Skewness of Backward Header Bytes Delta Length"
+        },
+        "cov_bwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Backward Header Bytes Delta Length"
+        },
+        "min_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Minimum Forward Header Bytes Delta Length"
+        },
+        "max_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Maximum Forward Header Bytes Delta Length"
+        },
+        "mean_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Mean Forward Header Bytes Delta Length"
+        },
+        "mode_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Mode of Forward Header Bytes Delta Length"
+        },
+        "variance_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Variance of Forward Header Bytes Delta Length"
+        },
+        "std_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Forward Header Bytes Delta Length"
+        },
+        "median_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Median of Forward Header Bytes Delta Length"
+        },
+        "skewness_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Skewness of Forward Header Bytes Delta Length"
+        },
+        "cov_fwd_header_bytes_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Forward Header Bytes Delta Length"
+        },
+        "min_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Minimum Payload Bytes Delta Length"
+        },
+        "max_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Maximum Payload Bytes Delta Length"
+        },
+        "mean_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Mean Payload Bytes Delta Length"
+        },
+        "mode_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Mode of Payload Bytes Delta Length"
+        },
+        "variance_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Variance of Payload Bytes Delta Length"
+        },
+        "std_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Payload Bytes Delta Length"
+        },
+        "median_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Median of Payload Bytes Delta Length"
+        },
+        "skewness_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Skewness of Payload Bytes Delta Length"
+        },
+        "cov_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Payload Bytes Delta Length"
+        },
+        "min_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Minimum Backward Payload Bytes Delta Length"
+        },
+        "max_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Maximum Backward Payload Bytes Delta Length"
+        },
+        "mean_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Mean Backward Payload Bytes Delta Length"
+        },
+        "mode_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Mode of Backward Payload Bytes Delta Length"
+        },
+        "variance_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Variance of Backward Payload Bytes Delta Length"
+        },
+        "std_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Backward Payload Bytes Delta Length"
+        },
+        "median_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Median of Backward Payload Bytes Delta Length"
+        },
+        "skewness_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Skewness of Backward Payload Bytes Delta Length"
+        },
+        "cov_bwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Backward Payload Bytes Delta Length"
+        },
+        "min_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Minimum Forward Payload Bytes Delta Length"
+        },
+        "max_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Maximum Forward Payload Bytes Delta Length"
+        },
+        "mean_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Mean Forward Payload Bytes Delta Length"
+        },
+        "mode_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Mode of Forward Payload Bytes Delta Length"
+        },
+        "variance_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Variance of Forward Payload Bytes Delta Length"
+        },
+        "std_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Standard Deviation of Forward Payload Bytes Delta Length"
+        },
+        "median_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Median of Forward Payload Bytes Delta Length"
+        },
+        "skewness_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Skewness of Forward Payload Bytes Delta Length"
+        },
+        "cov_fwd_payload_bytes_delta_len": {
+            "type": "float",
+            "description": "Coefficient of Variation of Forward Payload Bytes Delta Length"
+        }
+    },
+    "additionalProperties": false
+}
