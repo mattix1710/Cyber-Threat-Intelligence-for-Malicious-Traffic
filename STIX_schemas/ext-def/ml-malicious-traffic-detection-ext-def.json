@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/mattix1710/Cyber-Threat-Intelligence-for-Malicious-Traffic/main/STIX_schemas/ext-def/ml-malicious-traffic-detection-ext-def.json",
+    "title": "ml-malicious-traffic-detection-ext-def",
+    "description": "Extension for referencing an ML model trained for malicious traffic flow detection.",
+    "type": "object",
+    "properties": {
+        "ml_model_path": {
+            "type": "string",
+            "description": "Path of an ML model"
+        },
+        "ml_model_sha256_hash": {
+             "type": "string",
+             "description": "Hash of a dump file of ML model"
+        }
+    },
+    "additionalProperties": false
+}
