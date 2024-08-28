@@ -1,14 +1,3 @@
-'''
-    Last edit: 05.06.2024
-    Name: 01_attack_merging.py
-
-    UPDATE: 06.07.2024
-    - Added attack info update to ntfy
-    
-    UPDATE: 18.08.2024
-    - Unified DS SCHEMA extraction
-'''
-
 from pathlib import Path
 import polars as pl
 import os
