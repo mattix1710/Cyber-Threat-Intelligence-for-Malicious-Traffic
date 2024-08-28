@@ -7,7 +7,13 @@ from prerequisites import *
 import json
 import time
 
-DATASETS_USED = ["Recon-OSScan-shuffled"]#["DNS_Spoofing-shuffled"]
+DATASETS_USED = ["Recon-OSScan-shuffled",
+                 "Recon-PortScan-shuffled",
+                 "DictionaryBruteForce-shuffled",
+                 "DNS_Spoofing-shuffled",
+                 "DDoS-ICMP_Fragmentation-shuffled",
+                 "DDoS-SlowLoris-shuffled",
+                 "VulnerabilityScan-shuffled"]
 
 DUMP_PATH = Path(Path.cwd(), "04_attack_recognition_trained")
 DS_SCHEMA = label_casting("00_type_cast_data/type_list.txt")
@@ -20,10 +26,12 @@ def cast_ip_to_int64(ip_string: str):
     '''
     return int(ip_address(ip_string))
 
-attacks_importances = {}
+# attacks_importances = {}
 
 for ds in DATASETS_USED:
-    print("INFO: processing dataset of {}".format(ds))
+    log = "INFO: processing dataset of {}".format(ds)
+    print(log)
+    attack_update(log)
     # reading custom model from dump
     #attack_trained_pickled = open(Path(DUMP_PATH, "dump_{}.dmp".format(ds)), "rb")
     #forest_class = pickle.load(attack_trained_pickled)
@@ -65,16 +73,16 @@ for ds in DATASETS_USED:
         print("INFO: evaluating features by permutation of {} repeats! ({})".format(rep, ds))
         started = time.time()
         perms = permutation_importance(forest_class, X_train, y_train, n_repeats=rep, random_state=0, n_jobs=-1)
-        print("INFO: processing DONE in {}s!".format(round(time.time()-started,2)))
+        log = "INFO: permutation processing of {} repeats DONE in {}s! ({})".format(rep, round(time.time()-started,2), ds)
+        print(log)
+        attack_update(log)
         
         custom_perms = {}
         for imports in perms:
             custom_perms[imports] = perms[imports].tolist()
 
         local_importances[rep] = custom_perms
-    
-    attacks_importances[ds] = local_importances
         
-# saving the outputs to the json 
-with open("jsoned_perm_features.json", "w") as file_jsoned:
-    json.dump(attacks_importances, file_jsoned, indent=4)
+    # saving the outputs to the json 
+    with open("out/jsoned_perm_{}.json".format(ds), "w") as file_jsoned:
+        json.dump(local_importances, file_jsoned, indent=4)
