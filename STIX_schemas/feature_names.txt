@@ -1,4 +1,6 @@
+1. **src_ip**: Source IP
 1. **src_port**: Source Port
+2. **dst_ip**: Destination IP
 2. **dst_port**: Destination Port
 3. **duration**: Duration of the Flow
 4. **packets_count**: Total Number of Packets
