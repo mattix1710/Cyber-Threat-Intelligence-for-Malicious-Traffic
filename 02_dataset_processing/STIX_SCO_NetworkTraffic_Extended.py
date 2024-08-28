@@ -1,8 +1,5 @@
-import stix2
 from stix2 import NetworkTraffic, ExtensionDefinition, IPv4Address, Identity, Bundle
 from stix2.v21.observables import IPv4Address
-from stix2 import properties
-from stix2.utils import NOW
 import uuid
 import hashlib
 
